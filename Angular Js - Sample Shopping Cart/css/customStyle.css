@@ -1,0 +1,40 @@
+[ng-cloak] { display: none; }
+
+.topHeader{
+	text-align: center;
+}
+
+.post-content {
+    background: none repeat scroll 0 0 #000;
+    opacity: 0.8;
+	color:#fff;
+	top:0;
+    position: absolute;
+}
+
+.post-content  p{
+	text-align:center;
+}
+
+.cartHeader{
+	background:#555;
+	color:#fff;
+	margin-top:20px;
+	font-size:18px;
+	text-align:center;
+}
+
+.greybutton{
+	background:#555;
+	color:#fff;
+	border:1px solid #000;
+	font-weight:bold;
+	width:100%;
+	margin: 5px 0;
+}
+.greybutton:hover{
+	background:#222;
+	color:#fff;
+	border:1px solid #000;
+	font-weight:bold;
+}

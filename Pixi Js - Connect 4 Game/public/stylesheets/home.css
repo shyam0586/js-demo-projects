@@ -1,0 +1,16 @@
+body{
+	background-color:#6c6051;
+	text-align:center;
+}
+#gameContainer{
+	width:640px;
+	margin:50px auto 10px;
+	padding:20px;
+	background:#e2ddd3;
+	height:500px;
+}
+
+button{
+	padding:5px 10px;
+	margin:0 auto;
+}

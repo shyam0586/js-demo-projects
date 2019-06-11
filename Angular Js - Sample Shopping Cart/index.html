@@ -1,0 +1,38 @@
+<html>
+  <head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/customStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular.min.js"></script>
+    
+  </head>
+  <body ng-app="shoppingCart">
+	<h4 class="topHeader">Find & Hire Local Musicans.</h4>
+	<!-- Shopping items list -->
+	<div class="container" ng-controller="shoppingItems">
+		<div ng-repeat="item in items" class="center-block col-xs-12 col-md-2 col-lg-2">
+			 <img ng-src='img/{{item.image}}' class="img-responsive">
+			 <div class="col-lg-12 caption post-content">
+                <p>{{item.name}}</p>
+                <p>{{item.price | currency:"$":0}} </p> 
+				<p>{{item.availability}}</p>
+
+            </div>
+			<div class = "caption">
+				<p><a href="#" class="btn greybutton" data-ng-disabled="checkAvailable($index)" role="button" ng-click="addToCart($index)">Add To Cart</a></p>
+			</div>
+		</div>
+		<!-- Shopping Cart and price section -->
+		<div class="row col-xs-12 col-md-6 col-lg-6">
+			<div class="panel cartHeader">Shopping Cart({{totalPrice | currency:"$":0}})</div>
+
+			<ul class="list-group">
+				<li ng-repeat = "item in itemsInCart" class="list-group-item">{{item.name}}  <button type="button" ng-click="removeFromCart($index)" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
+	<script src="js/controllers/shoppingModule.js"></script>
+  </body>
+</html>

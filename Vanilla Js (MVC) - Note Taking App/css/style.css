@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("../fonts/Calibri.ttf");
+}
+
+body {
+  font-family: "Calibri" !important;
+}
+label {
+  color: #bfbfbf;
+  font-size: 14px;
+}
+select.form-control,
+#note-content {
+  font-size: 18px !important;
+  color: #000000;
+}
+.margin-top-thirty {
+  margin-top: 30px;
+}
+
+.margin-top-ten {
+  margin-top: 10px;
+}
+
+#edit-note-btn {
+  padding: -0.3em 1.7em;
+  border-radius: 0.2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 400;
+  color: #ffffff !important;
+  display: none;
+  border: 1px solid #8bcf54;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: arial, helvetica, sans-serif;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #a9db80;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#a9db80),
+    to(#96c56f)
+  );
+  background-image: -webkit-linear-gradient(top, #a9db80, #96c56f);
+  background-image: -moz-linear-gradient(top, #a9db80, #96c56f);
+  background-image: -ms-linear-gradient(top, #a9db80, #96c56f);
+  background-image: -o-linear-gradient(top, #a9db80, #96c56f);
+  background-image: linear-gradient(to bottom, #a9db80, #96c56f);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#a9db80, endColorstr=#96c56f);
+}
+#add-note-btn {
+  padding: -0.3em 1.7em;
+  border-radius: 0.2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 400;
+  color: #ffffff !important;
+
+  border: 1px solid #15aeec;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #49c0f0;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#49c0f0),
+    to(#2cafe3)
+  );
+  background-image: -webkit-linear-gradient(top, #49c0f0, #2cafe3);
+  background-image: -moz-linear-gradient(top, #49c0f0, #2cafe3);
+  background-image: -ms-linear-gradient(top, #49c0f0, #2cafe3);
+  background-image: -o-linear-gradient(top, #49c0f0, #2cafe3);
+  background-image: linear-gradient(to bottom, #49c0f0, #2cafe3);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#49c0f0, endColorstr=#2CAFE3);
+  text-align: center;
+  position: relative;
+  width: 140px;
+  font-size: 16px;
+}
+
+#add-note-btn:hover {
+  border: 1px solid #1090c3;
+  background-color: #1ab0ec;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#1ab0ec),
+    to(#1a92c2)
+  );
+  background-image: -webkit-linear-gradient(top, #1ab0ec, #1a92c2);
+  background-image: -moz-linear-gradient(top, #1ab0ec, #1a92c2);
+  background-image: -ms-linear-gradient(top, #1ab0ec, #1a92c2);
+  background-image: -o-linear-gradient(top, #1ab0ec, #1a92c2);
+  background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#1ab0ec, endColorstr=#1a92c2);
+}
+
+.note-list-item {
+  -webkit-box-shadow: 1px -1px 10px 0.1px #ccc;
+  box-shadow: 1px -1px 10px 0.1px #ccc;
+  border: 1px solid #ccc;
+  width: 32%;
+  margin-left: 1%;
+  margin-bottom: 20px;
+  min-height: 180px;
+  float: left;
+  background: rgba(255, 255, 255, 1);
+  color: #b4b4b4;
+  padding: 10px 10px 10px 10px;
+  background: rgba(255, 255, 255, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 2%,
+    rgba(244, 244, 244, 1) 24%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(255, 255, 255, 1)),
+    color-stop(2%, rgba(246, 246, 246, 1)),
+    color-stop(24%, rgba(244, 244, 244, 1)),
+    color-stop(100%, rgba(237, 237, 237, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 2%,
+    rgba(244, 244, 244, 1) 24%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 2%,
+    rgba(244, 244, 244, 1) 24%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 2%,
+    rgba(244, 244, 244, 1) 24%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 2%,
+    rgba(244, 244, 244, 1) 24%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+}
+
+.note-header {
+  font-size: 20px;
+  width: 66%;
+  float: left;
+  padding: 1%;
+}
+
+.icon-holder {
+  font-size: 18px;
+  width: 30%;
+  float: left;
+  padding: 1%;
+}
+
+.note-content {
+  font-size: 16px;
+  color: #a6a6a6;
+  width: 98%;
+  float: left;
+  padding: 1%;
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.date-time {
+  width: 98%;
+  float: left;
+  padding: 1%;
+  color: #a6a6a6;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.icon-holder button {
+  float: right;
+  font-size: 15px;
+  margin-right: 10px;
+  padding: 5px;
+  display: none;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 75%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(255, 255, 255, 1)),
+    color-stop(75%, rgba(246, 246, 246, 1)),
+    color-stop(100%, rgba(237, 237, 237, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 75%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 75%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 75%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(246, 246, 246, 1) 75%,
+    rgba(237, 237, 237, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+}
+
+.note-list-item:hover .icon-holder button {
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 10px;
+}
